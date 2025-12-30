@@ -17,8 +17,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Wanderlust - Discover the World",
-  description: "A beautiful travel blog showcasing stunning destinations and unforgettable adventures around the globe",
+  title: "Vietnam Timeless Charm - Discover Vietnam's Beauty",
+  description: "Explore the enchanting landscapes of Vietnam, from majestic mountains and serene rivers to pristine beaches and ancient temples.",
   generator: "v0.app",
   icons: {
     icon: [
