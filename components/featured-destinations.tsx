@@ -1,34 +1,37 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { MapPin } from "lucide-react"
+import Image from "next/image"
 
 const destinations = [
   {
     id: 1,
-    name: "Santorini, Greece",
-    description: "White-washed villages perched on dramatic cliffs overlooking the Aegean Sea",
-    image: "/santorini-sunset.png",
-    country: "Greece",
+    name: "Hạ Long Bay, Quảng Ninh",
+    description: "A breathtaking UNESCO World Heritage site featuring thousands of limestone karsts rising majestically from emerald waters, creating one of Vietnam's most iconic landscapes.",
+    image: "/ha-long-bay.jpg",
+    country: "North Vietnam",
   },
   {
     id: 2,
-    name: "Kyoto, Japan",
-    description: "Ancient temples, serene gardens, and timeless traditions in Japan's cultural heart",
-    image: "/kyoto-japan-temple-cherry-blossoms-traditional-arc.jpg",
-    country: "Japan",
+    name: "Sapa, Lào Cai",
+    description: "Misty mountain town nestled in the Hoang Lien Son Mountains, known for its terraced rice paddies, ethnic minority villages, and stunning natural scenery.",
+    image: "/sapa.jpg",
+    country: "North Vietnam",
   },
   {
     id: 3,
-    name: "Patagonia, Chile",
-    description: "Untamed wilderness with glaciers, mountains, and pristine landscapes",
-    image: "/patagonia-chile-torres-del-paine-mountains-glacier.jpg",
-    country: "Chile",
+    name: "Phong Nha Ke Bang, Quảng Bình",
+    description: "A paradise for cave explorers and nature lovers, featuring spectacular limestone mountains, pristine rivers, and Vietnam's most magnificent caves including Son Doong.",
+    image: "/phong-nha.jpg",
+    country: "Central Vietnam",
   },
   {
     id: 4,
-    name: "Marrakech, Morocco",
-    description: "Vibrant markets, stunning palaces, and the magic of Moroccan culture",
-    image: "/marrakech-morocco-colorful-market-souk-traditional.jpg",
-    country: "Morocco",
+    name: "Mekong Delta, Cần Thơ",
+    description: "Experience the rhythm of rural Vietnam with its vast network of waterways, floating villages, lush orchards, and vibrant floating markets teeming with local life.",
+    image: "/mekong-delta.jpg",
+    country: "South Vietnam",
   },
 ]
 
@@ -38,10 +41,10 @@ export function FeaturedDestinations() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4 text-balance">
-            Featured Destinations
+            Vietnam's Must-See Destinations
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            Handpicked locations that will take your breath away and create memories that last forever
+            Explore Vietnam's most stunning landscapes, from mystical karsts and misty mountains to vibrant waterways and pristine beaches
           </p>
         </div>
 
@@ -52,10 +55,12 @@ export function FeaturedDestinations() {
               className="group relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               <div className="relative h-[400px] lg:h-[500px] overflow-hidden">
-                <img
-                  src={destination.image || "/placeholder.svg"}
+                <Image
+                  src={destination.image}
                   alt={destination.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 text-white">

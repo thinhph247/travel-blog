@@ -12,7 +12,7 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="/" className="text-2xl lg:text-3xl font-serif font-bold tracking-tight text-foreground">
-            Wanderlust
+            Vietnam Timeless Charm
           </a>
 
           <nav className="hidden md:flex items-center gap-8">

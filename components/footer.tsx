@@ -6,14 +6,14 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-serif font-bold text-foreground mb-4">Wanderlust</h3>
+            <h3 className="text-2xl font-serif font-bold text-foreground mb-4">Vietnam Timeless Charm</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Inspiring travelers to explore the world, one destination at a time.
+              Inspiring travelers to discover Vietnam's breathtaking landscapes, rich culture, and timeless beauty.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Explore</h4>
+            <h4 className="font-semibold text-foreground mb-4">Discover</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#destinations" className="text-muted-foreground hover:text-accent transition-colors">
@@ -22,7 +22,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#stories" className="text-muted-foreground hover:text-accent transition-colors">
-                  Travel Stories
+                  Vietnam Stories
                 </a>
               </li>
               <li>
@@ -32,7 +32,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#tips" className="text-muted-foreground hover:text-accent transition-colors">
-                  Travel Tips
+                  Vietnam Tips
                 </a>
               </li>
             </ul>
@@ -84,7 +84,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>© 2025 Wanderlust Travel Blog. All rights reserved.</p>
+          <p>© 2025 Vietnam Timeless Charm. All rights reserved.</p>
         </div>
       </div>
     </footer>

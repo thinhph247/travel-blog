@@ -21,11 +21,10 @@ export function Newsletter() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold mb-4 text-balance">
-            Never Miss an Adventure
+            Discover Vietnam's Magic
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8 text-pretty leading-relaxed">
-            Subscribe to our newsletter and get the latest travel stories, tips, and inspiration delivered straight to
-            your inbox
+            Subscribe to our newsletter and receive the latest Vietnam travel guides, hidden gems, and insider tips delivered to your inbox
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <Input
